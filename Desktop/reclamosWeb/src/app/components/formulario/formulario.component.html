@@ -1,0 +1,100 @@
+<div class="container">
+    <div class="card-container">
+        <div class="custom-card">
+            <h2 class="myHeader">Datos Reclamante</h2>
+            <hr>
+            <form [formGroup]="formularioReclamo" (ngSubmit)="onSubmit()">
+                <br><br>
+                <div class="card flex justify-content-center">
+                    <span class="p-float-label">
+                        <input pInputText formControlName="nombre" class="custom-input" id="nombre" />
+                        <label for="nombre">Nombre del usuario afectado</label>
+                    </span>
+                </div>
+                <br>
+                <br>
+                <div class="card flex justify-content-center">
+                    <span class="p-float-label">
+                        <input pInputText formControlName="apellido" class="custom-input" id="apellido" />
+                        <label for="apellido">Apellido del usuario afectado</label>
+                    </span>
+                </div>
+                <br>
+                <br>
+                <div class="card flex justify-content-center">
+                    <span class="p-float-label">
+                        <input pInputText pKeyFilter="int" formControlName="dni" class="custom-input" id="dni" />
+                        <label for="dni">DNI del usuario afectado</label>
+                    </span>
+                </div>
+                <br>
+                <br>
+                <div class="card flex justify-content-center">
+                    <span class="p-float-label">
+                        <input pInputText formControlName="direccion" class="custom-input" id="direccion" />
+                        <label for="direccion">Domicilio del usuario afectado</label>
+                    </span>
+                </div>
+                <br>
+                <br>
+                <button class="button" type="submit" label="Submit">Enviar</button>
+            </form>
+        </div>
+
+
+        <div class="custom-card">
+            <h2 class="myHeader">Datos Suministro</h2>
+            <hr>
+            <form [formGroup]="formularioReclamo" (ngSubmit)="onSubmit()">
+                <br><br>
+                <div class="card flex justify-content-center">
+                    <span class="p-float-label">
+                        <input pInputText formControlName="nombre" class="custom-input" id="nombre" />
+                        <label for="nombre">Nombre del usuario afectado</label>
+                    </span>
+                </div>
+                <br>
+                <br>
+                <div class="card flex justify-content-center">
+                    <span class="p-float-label">
+                        <input pInputText formControlName="apellido" class="custom-input" id="apellido" />
+                        <label for="apellido">Apellido del usuario afectado</label>
+                    </span>
+                </div>
+                <br>
+                <br>
+                <div class="card flex justify-content-center">
+                    <span class="p-float-label">
+                        <input pInputText pKeyFilter="int" formControlName="dni" class="custom-input" id="dni" />
+                        <label for="dni">DNI del usuario afectado</label>
+                    </span>
+                </div>
+                <br>
+                <br>
+                <div class="card flex justify-content-center">
+                    <span class="p-float-label">
+                        <input pInputText formControlName="direccion" class="custom-input" id="direccion" />
+                        <label for="direccion">Domicilio del usuario afectado</label>
+                    </span>
+                </div>
+                <br>
+                <br>
+                <button class="button" type="submit" label="Submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+<div class="checkbox-wrapper-31">
+    <input checked="" type="checkbox">
+    <svg viewBox="0 0 35.6 35.6">
+        <circle class="background" cx="17.8" cy="17.8" r="17.8"></circle>
+        <circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle>
+        <polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline>
+    </svg>
+</div>
