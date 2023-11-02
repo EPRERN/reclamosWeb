@@ -13,6 +13,9 @@ export class FormularioComponent implements OnInit {
   formularios: any;
 
   formularioSuministro!:FormGroup;
+  localidades: any[] = [
+
+  ]; 
 
 
   constructor(public fb: FormBuilder) {}
