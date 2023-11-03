@@ -12,7 +12,11 @@ import { DropdownModule } from 'primeng/dropdown';
 import { CardModule } from 'primeng/card';
 import { EmailComponent } from './components/popups/email/email.component';
 import { ResarcimientoComponent } from './components/popups/resarcimiento/resarcimiento.component';
-import { PruebaPopComponent } from './components/popups/prueba-pop/prueba-pop.component';
+import { PopResarcimientoComponent } from './components/popups/pop-resarcimiento/pop-resarcimiento.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -20,7 +24,7 @@ import { PruebaPopComponent } from './components/popups/prueba-pop/prueba-pop.co
     FormularioComponent,
     EmailComponent,
     ResarcimientoComponent,
-    PruebaPopComponent
+    PopResarcimientoComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +34,9 @@ import { PruebaPopComponent } from './components/popups/prueba-pop/prueba-pop.co
     ReactiveFormsModule,
     CardModule,
     DropdownModule,
-    DividerModule
+    DividerModule,
+    BrowserAnimationsModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
